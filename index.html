@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabio Thieres</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
 </head>
 
 <body>
@@ -15,10 +16,14 @@
         </div>
         <nav>
             <ul>
-                <li>SOBRE</li>
-                <li>PROJETOS</li>
-                <li>CONTATOS</li>
-                <li>CURSOS</li>
+                <a href="/">
+                    <li>SOBRE</li>
+                </a>
+                <a href="#projetos">
+                    <li>PROJETOS</li>
+                </a><a href="">
+                    <li>CONTATOS</li>
+                </a>
             </ul>
         </nav>
     </header>
@@ -48,32 +53,33 @@
         </section>
 
         <section class="projetos">
-            <article>
-                <h3>DOCERIA FLORIPA</h3>
-                <img src="img/doceria.png" alt="Projeto Doceria Floripa">
-                <p>Este é o meu principal projeto. Feito usando React Vite, Router DOM e SCSS como principais
-                    tecnologias. Este site está hospedado no Vercel e com domínio da Registro BR. pode ser acessado
-                    clicando no link abaixo.</p>
-                <a href="https://www.doceriafloripa.com.br/" target="_blank">CLIQUE AQUI</a>
-            </article>
+            <h2 id="projetos">PRINCIPAIS PROJETOS</h2>
+            <section class="containerCards">
+                <article>
+                    <h3>DOCERIA FLORIPA</h3>
+                    <img src="img/doceria.png" alt="Projeto Doceria Floripa">
+                    <p>Este é o meu principal projeto. Feito usando React Vite, Router DOM e SCSS como principais
+                        tecnologias. Este site está hospedado no Vercel e com domínio da Registro BR. Pode ser acessado
+                        clicando no link abaixo.</p>
+                    <a href="https://www.doceriafloripa.com.br/" target="_blank">CLIQUE AQUI</a>
+                </article>
+                <article>
+                    <h3>PROJETO VIVA BEM</h3>
+                    <img src="img/medicos.png" alt="Projeto Doceria Floripa">
+                    <p>Este foi um dos projetos que desenvolvi enquanto estava cursando o curso "Formação Full Stack" da
+                        Vai na Web. O objetivo foi mostrar o aprendizado do CSS Flexbox.</p>
+                    <a href="https://projeto-viva-bem.vercel.app/" target="_blank">CLIQUE AQUI</a>
+                </article>
 
-            <article>
-                <h3>DOCERIA FLORIPA</h3>
-                <img src="img/doceria.png" alt="Projeto Doceria Floripa">
-                <p>Este é o meu principal projeto. Feito usando React Vite, Router DOM e SCSS como principais
-                    tecnologias. Este site está hospedado no Vercel e com domínio da Registro BR. pode ser acessado
-                    clicando no link abaixo.</p>
-                <a href="https://www.doceriafloripa.com.br/" target="_blank">CLIQUE AQUI</a>
-            </article>
-
-            <article>
-                <h3>DOCERIA FLORIPA</h3>
-                <img src="img/doceria.png" alt="Projeto Doceria Floripa">
-                <p>Este é o meu principal projeto. Feito usando React Vite, Router DOM e SCSS como principais
-                    tecnologias. Este site está hospedado no Vercel e com domínio da Registro BR. pode ser acessado
-                    clicando no link abaixo.</p>
-                <a href="https://www.doceriafloripa.com.br/" target="_blank">CLIQUE AQUI</a>
-            </article>
+                <article>
+                    <h3>DOCERIA FLORIPA</h3>
+                    <img src="img/reciclagem.png" alt="Projeto Doceria Floripa">
+                    <p>Este é outro projeto feito no curso Vai na Web. O objetivo foi criar uma landing page moderna,
+                        atraente e 100% responsiva, que sirva como o principal ponto de entrada para os usuários da
+                        plataforma.</p>
+                    <a href="https://reciclatech-rouge.vercel.app/" target="_blank">CLIQUE AQUI</a>
+                </article>
+            </section>
         </section>
     </main>
 </body>
