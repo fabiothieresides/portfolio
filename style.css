@@ -48,6 +48,9 @@ header nav ul li:hover {
     color: #8EF9DA;
 }
 
+header button {
+    display: none;
+}
 
 main {
     display: flex;
@@ -107,7 +110,8 @@ main .conteudoPrincipal .textos h3 {
     font-size: 37px;
 }
 
-main .conteudoPrincipal .textos h2, h3 {
+main .conteudoPrincipal .textos h2,
+h3 {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -124,7 +128,6 @@ main .conteudoPrincipal .textos button {
     color: #8EF9DA;
     border-color: #8EF9DA;
     cursor: pointer;
-    /* margin-top: 20px; */
     position: relative;
     top: 20px;
 }
@@ -144,9 +147,11 @@ main .conteudoPrincipal article img {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 3.5rem;
 }
 
-.projetos h2 {
+.projetos h2,
+.contatos h2 {
     font-family: "Play", sans-serif;
     font-size: 32px;
     color: #8EF9DA;
@@ -165,7 +170,6 @@ main .projetos article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 2px solid white; */
     border-radius: 12px;
     width: 400px;
     color: white;
@@ -192,9 +196,144 @@ main .projetos article a {
     font-family: "Play", sans-serif;
     position: absolute;
     bottom: 0;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
+
+main .projetos article a:hover {
+    transform: scale(1.2);
+    color: #8EF9DA;
+}
+
 
 main .projetos article p {
     font-family: "Play", sans-serif;
     width: 85%;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contatos img {
+    border-radius: 12px;
+}
+
+.containerContatos {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.containerContatos article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 35rem;
+}
+
+.containerContatos article a {
+    color: #8EF9DA;
+    font-family: "Play", sans-serif;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+main .containerContatos article a:hover {
+    transform: scale(1.2);
+    color: #8EF9DA;
+}
+
+
+@media (max-width: 600px) {
+    header {
+        padding: 1rem;
+    }
+
+    main {
+        padding: 3rem 1rem;
+        justify-content: center;
+    }
+
+    main .redes {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        align-items: center;
+        padding: 0;
+        margin: 1.25rem 0;
+        gap: 1.8rem;
+    }
+
+    main .conteudoPrincipal {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    main .conteudoPrincipal .apresentacao {
+        width: 100%;
+        font-size: 1.25rem;
+    }
+
+    main .conteudoPrincipal .textos {
+        padding: 0;
+        gap: 1rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    main .conteudoPrincipal .textos h2 {
+        font-size: 1.5rem;
+    }
+
+    main .conteudoPrincipal .textos h3 {
+        font-size: 2rem;
+    }
+
+    main .conteudoPrincipal .textos p {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    main .projetos {
+        padding-top: 0;
+        margin-top: 2.5rem;
+    }
+
+    main .projetos .containerCards {
+        gap: 1.5rem;
+    }
+
+    main .contatos {
+        text-align: center;
+    }
+
+    main .contatos h2 {
+        font-size: 1.5rem;
+    }
+
+    main .contatos article {
+        width: 90%;
+    }
+
+    .containerContatos {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
 }
